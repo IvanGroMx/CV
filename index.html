@@ -4,84 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivan's Personal Site</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Major+Mono+Display&family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&family=Poiret+One&family=Red+Hat+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><div><img src="myphoto.jpg" width="200" alt="Ivan's Profile Picture"></div></td>
-            <td>
-                <h1>Ivan Guerrero Cardoso</h1>
-                <em>Pharmaceutical chemist</em> <br>
-                <em>XRF Analyst at <strong><a href="https://matthey.com/en">Jhonson Matthey</a></strong></em>
-                <p>I am a chemist interested on several topics, my main areas of interest are a 
-                    bit outside of my current field, like game development, computer programming and digital art.</li>
-            </td>
-        </tr>
-    </table>   
-    <hr size="2" >
-    <h3>Work experience</h3>
-    <table cellspacing="15">
-        <tr>
-            <td>Jan 2020 - Jun 2020</td>
-            <td>Quality assurance intern</td>
-            <td>Alergofarma de México</td>
-        </tr>
-        <tr>
-            <td>Jul 2020 - Mar 2021</td>
-            <td>Chemical Analyst</td>
-            <td>Puremin SAPI de CV</td>
-        </tr>
-        <tr>
-            <td>Sep 2021 - Present</td>
-            <td>Quality Control Analyst</td>
-            <td>Jhonson Matthey</td>
-        </tr>
-    </table>
-    <hr size="2" >
-    <h3>Education and courses</h3>
-    <ul>
-        <li>Bachelor on Pharmaceutical Chemistry - UAQ</li>
-        <li><a href="https://www.freecodecamp.org/certification/ivangromx/responsive-web-design">Responsive web design</a> - FreeCodeCamp</li>
-        <li><a href="https://www.freecodecamp.org/certification/ivangromx/javascript-algorithms-and-data-structures">JavaScript Algorithms and Data Structures</a> - FreeCodeCamp</li> 
-        <li><u>Complete C# Unity Game Developer 2D</u> - Udemy</li>
-    </ul>
-    <hr size="2" >
-    <h3>My hobbies</h3>
-    <ol>
-        <li>Playing videogames</li>
-        <li>Reading</li>
-        <li>Learning computer programming</li>
-        <li>Cooking</li>
-    </ol>
-    <hr size="2" >
-    <h3>Skills and interests</h3>
-    <table>
-        <tr>
-            <td>
-                <ul>
-                    <li>HTML</li>
-                    <li>C#</li>
-                    <li>JavaScript</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Digital Painting</li>
-                    <li>Game development</li>
-                    <li>Computer programming</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Critical thinking</li>
-                    <li>Continuous improvement</li>
-                    <li>Teamwork</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <hr size="2">
-    <a href="contact.html">Contact Me!</a>
+    <div class="top-container">
+        <div class="circle">
+            <h1>I'm Ivan.</h1>
+            <p style="display:inline;">A pharmaceutical chemist with a wide variety of interests</p>
+        </div>
+    </div>
+
+    <div class="middle-container">
+        <div class="profile">
+            <img src="Images/myphotocropped.jpg" alt="Ivan's photo" id="myPhoto">
+            <h2>Hello.</h2>
+            <p>My name is Ivan Guerrero Cardoso and I am interested in chemistry, digital art, game development and computer programming.</p>
+        </div>
+        <hr><br>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="pics" src="Images/art1.png" alt="Digital art representation" style="float: left;"> <!--<a href="https://www.flaticon.com/free-icons/token" title="token icons">Token icons created by mj - Flaticon</a>-->
+            <h3>Cool digital art</h3>
+            <p>I've made some projects in both 3D and 2D art using blender, photoshop and illustrator</p>
+          </div>
+          
+          <div class="skill-row">
+            <img class="pics" src="Images/coding.png" alt="Programming representation" style="float: right;"><!--<a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by prettycons - Flaticon</a>-->
+            <h3>Programming</h3>
+            <p>I'm currently still learning programming, but I have made some game development projects in C# and web design projects like this webpage using HTML, CSS and JS</p>
+          </div>
+          <div class="skill-row">
+            <img class="pics" src="Images/flask.png" alt="Cool laboratory glassware" style="float: left;"><!--<a href="https://www.flaticon.com/free-icons/chemistry" title="chemistry icons">Chemistry icons created by Freepik - Flaticon</a>-->
+            <h3>Chemistry</h3>
+            <p>I've worked for 1.5 years as a quality control analyst, learning mainly about NOPs, GMPs, and international laws and norms, like ISO 9001:2015, IATF 16949:2016</p>
+          </div>
+        </div>
+        <hr><br>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>I'm open to freelance projects</h3>
+          <p>If you feel I might be the right guy for your project, get in touch.</p><br>
+          <a class="btn" href="mailto:ivgrocar@gmail.com">CONTACT ME</a>
+          <br>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/ivan-guerrero-cardoso-632844195/">LinkedIn</a>
+        <a class="footer-link" href="https://www.instagram.com/ivangcar/">Instagram</a><br>
+        <p>© 2022 Ivan Guerrero.</p>
+      </div>
 </body>
 </html>

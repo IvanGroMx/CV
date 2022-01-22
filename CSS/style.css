@@ -1,0 +1,144 @@
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Red Hat Mono', monospace;*/
+
+a{
+    color: #b98888;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #444444;
+    color: #c5bebe;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+    color: #EDEDED;
+}
+h2{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    color: #EDEDED; 
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+hr{
+    width: 20%;
+    border-style: none;
+    border-top: dotted 8px #770421;
+    clear: both;
+}
+p{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+.contact-me{
+    padding-bottom: 20px;
+}
+.pics{
+    width: 20%;
+    padding: 30px;
+    /*border-radius: 50%;*/
+}
+.profile{
+    width: 50%;
+    margin:50px auto 50px auto;
+}
+.skill-row{
+    width: 50%;
+    margin:7% auto 7% auto;
+    text-align: left;
+    line-height: 2;
+}
+.top-container{
+    background-color: #171717;
+    color: #B4A5A5;
+    text-align: center;
+    height: 100vh;
+    margin-top: 0%;
+}
+
+.bottom-container{
+    background-color: #171717;
+    color: #B4A5A5;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn{
+    background-color: #770421;
+    padding: .5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 11px;
+    text-decoration: none;
+}
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: #444444;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5%;
+    border:solid #DA0037;
+    display: inline-block;
+    position: relative;
+    top:30%;
+}
+#myPhoto{
+    width: 150px;
+    border-radius: 50%;
+    border: solid #171717;
+    margin-top: 20px;
+}
+
+/*Gallery stuff after this comment
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .responsive {
+    padding: 0 1%;
+    float: left;
+    width: 15%;
+    box-sizing: border-box;
+
+  }
+  
+ 
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+    margin:50px auto 50px auto;
+    width: 80%;
+  }*/
