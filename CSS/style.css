@@ -8,6 +8,7 @@ font-family: 'Red Hat Mono', monospace;*/
 
 a{
     color: #b98888;
+    margin: 10px 20px;
 }
 body{
     margin: 0px;
@@ -38,16 +39,34 @@ hr{
     border-style: none;
     border-top: dotted 8px #770421;
     clear: both;
+    background-color: unset;
+    margin: auto;
 }
 p{
     font-family:  'Montserrat', sans-serif;
     font-size: 1.2rem;
 }
+
+.margin-auto{
+    margin: auto;
+}
+
+.carousel-text{
+    background-color: #44444481;
+}
+
+.carousel-margin{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
 .contact-me{
     padding-bottom: 20px;
 }
 .pics{
-    width: 20%;
+    width: 200px;
     padding: 30px;
     /*border-radius: 50%;*/
 }
@@ -55,11 +74,9 @@ p{
     width: 50%;
     margin:50px auto 50px auto;
 }
-.skill-row{
-    width: 50%;
-    margin:7% auto 7% auto;
-    text-align: left;
-    line-height: 2;
+.row{
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .top-container{
     background-color: #171717;
@@ -78,13 +95,16 @@ p{
     padding-bottom: 10px;
 }
 .btn{
-    background-color: #770421;
+    background-color: #970d30;
     padding: .5%;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: bold;
     border-radius: 11px;
     text-decoration: none;
+}
+.btn:hover{
+    background-color: #ac1e42;
 }
 .circle {
     height: 200px;
@@ -98,12 +118,14 @@ p{
     display: inline-block;
     position: relative;
     top:30%;
+    box-sizing: unset;
 }
 #myPhoto{
     width: 150px;
     border-radius: 50%;
     border: solid #171717;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*Gallery stuff after this comment

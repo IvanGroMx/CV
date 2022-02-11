@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan's site</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="CSS/style.css">
+    
+      <!-- FontAwesome -->
+      <script src="https://kit.fontawesome.com/563128bfdb.js" crossorigin="anonymous"></script>
+    
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +21,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Major+Mono+Display&family=Montserrat:wght@300&family=Open+Sans+Condensed:wght@300&family=Poiret+One&family=Red+Hat+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="top-container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#top">Presentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href= "#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="top-container" id="top">
         <div class="circle">
             <h1>I'm Ivan.</h1>
             <p style="display:inline;">A pharmaceutical chemist with a wide variety of interests</p>
@@ -22,37 +52,98 @@
     </div>
 
     <div class="middle-container">
-        <div class="profile">
+        <div class="profile" id="profile">
             <img src="Images/myphotocropped.jpg" alt="Ivan's photo" id="myPhoto">
             <h2>Hello.</h2>
             <p>My name is Ivan Guerrero Cardoso and I am interested in chemistry, digital art, game development and computer programming.</p>
         </div>
         <hr><br>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="pics" src="Images/art1.png" alt="Digital art representation" style="float: left;"> <!--<a href="https://www.flaticon.com/free-icons/token" title="token icons">Token icons created by mj - Flaticon</a>-->
-            <h3>Cool digital art</h3>
-            <p>I've made some projects in both 3D and 2D art using blender, photoshop and illustrator</p>
+        <div class="skills" id="skills">
+          <h2>My Skills.</h2><br><br>
+
+          <div class="row justify-content-center">
+            <img class="pics col-md-6 col-lg-6" src="Images/art1.png" alt="Digital art representation"> <!--<a href="https://www.flaticon.com/free-icons/token" title="token icons">Token icons created by mj - Flaticon</a>-->
+            <div class="col-md-6 col-lg-6">
+              <h3>Cool digital art</h3>
+              <p>I've made some projects in both 3D and 2D art using blender, photoshop and illustrator</p>
+            </div>
           </div>
-          
-          <div class="skill-row">
-            <img class="pics" src="Images/coding.png" alt="Programming representation" style="float: right;"><!--<a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by prettycons - Flaticon</a>-->
-            <h3>Programming</h3>
-            <p>I'm currently still learning programming, but I have made some game development projects in C# and web design projects like this webpage using HTML, CSS and JS</p>
+
+
+          <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner carousel-margin">
+              <div class="carousel-item active">
+                <img src="Images/projects/donnut.jpg" class="d-block w-50 margin-auto" alt="donut 3D">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                  <h5>Donut and coffee</h5>
+                  <p>Coffee scene made with blender.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/projects/landscape.png" class="d-block w-50 margin-auto" alt="Landscape">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                  <h5>Lake landscape</h5>
+                  <p>Landscape made with photoshop</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/projects/photorealism project v2.png" class="d-block w-50 margin-auto" alt="Godzilla fanart">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                  <h5>Godzilla and Mothra</h5>
+                  <p>Fanart made using photoshop.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/projects/spaceship.png" class="d-block w-50 margin-auto" alt="Spaceship pixelart">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                  <h5>Spaceship pixelart</h5>
+                  <p>Pixelart made for a galaga style minigame.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="skill-row">
-            <img class="pics" src="Images/flask.png" alt="Cool laboratory glassware" style="float: left;"><!--<a href="https://www.flaticon.com/free-icons/chemistry" title="chemistry icons">Chemistry icons created by Freepik - Flaticon</a>-->
-            <h3>Chemistry</h3>
-            <p>I've worked for 1.5 years as a quality control analyst, learning mainly about NOPs, GMPs, and international laws and norms, like ISO 9001:2015, IATF 16949:2016</p>
+         
+          <div class="row justify-content-center">
+            <img class="pics col-md-6 col-lg-6" src="Images/coding.png" alt="Programming representation" style="float: right;"><!--<a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by prettycons - Flaticon</a>-->
+            <div class="col-md-6 col-lg-6">
+              <h3>Programming</h3>
+              <p>I'm currently still learning programming, but I have made some game development projects in C# and web design projects like this webpage using HTML, CSS and JS</p>
+              <ul style="list-style-type:none">
+                <li><a href="https://sharemygame.com/@IvGroCar/dark-dungeon">Dark dungeon</a>: Plataformer 2D game</li>
+                <li><a href="https://sharemygame.com/@IvGroCar/glitchgardenigc">Glitch garden</a>: Plants vs zombies style minigame</li>
+              </ul>           
+            </div>            
           </div>
+
+          <div class="row justify-content-center">
+            <img class="pics col-md-6 col-lg-6" src="Images/flask.png" alt="Cool laboratory glassware" style="float: left;"><!--<a href="https://www.flaticon.com/free-icons/chemistry" title="chemistry icons">Chemistry icons created by Freepik - Flaticon</a>-->
+            <div class="col-md-6 col-lg-6">
+              <h3>Chemistry</h3>
+              <p>I've worked for 1.5 years as a quality control analyst, learning mainly about NOPs, GMPs, and international laws and norms, like ISO 9001:2015, IATF 16949:2016</p>
+            </div>
+          </div>
+
         </div>
         <hr><br>
-        <div class="contact-me">
+        <div class="contact-me" id="contact">
           <h2>Get In Touch</h2>
           <h3>I'm open to freelance projects</h3>
           <p>If you feel I might be the right guy for your project, get in touch.</p><br>
-          <a class="btn" href="mailto:ivgrocar@gmail.com">CONTACT ME</a>
+          <a class="btn" href="mailto:ivgrocar@gmail.com"><i class="fas fa-id-card-alt"></i> CONTACT ME</a>
           <br>
         </div>
       </div>
